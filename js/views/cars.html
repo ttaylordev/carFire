@@ -1,0 +1,22 @@
+<h1>Cars Page</h1>
+
+<div ng-repeat="car in cars">
+  Make: {{car.make}}, 
+  Model: {{car.model}}
+  Year: {{car.year}}
+  Mileage: {{car.mileage}}
+  Price: {{car.price}}
+  <a ui-sref="car({carId:car.$id})">View Car</a>
+</div>
+<!-- ui-sref works off the state names in the .config file. -->
+
+
+<hr>
+<div class="">
+  <input type="text" ng-model="newCar.make" placeholder="Car Make">
+  <input type="text" ng-model="newCar.model" placeholder="Car Model">
+  <input type="text" ng-model="newCar.year" placeholder="Car Year">
+  <input type="text" ng-model="newCar.mileage" placeholder="Car Mileage">
+  <input type="text" ng-model="newCar.price" placeholder="Car Price">
+<button ng-click="createNewCar(newCar)" type="button" name="button">Suck it!</button>
+</div>
