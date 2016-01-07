@@ -1,12 +1,13 @@
-
 <h1>Car Page</h1>
 {{message}}
+<img ng-src="" alt="" />
 <p>
-  Make: ((car.make))
-  Model: {{car.model}}
-  Year: {{car.year}}
-  Mileage: {{car.mileage}}
-  Price: {{car.price}}
+  Make: {{car.make}},
+  Model: {{car.model}},
+  Year: {{car.year}},
+  Mileage: {{car.mileage}},
+  Price: {{car.price}},
+  Comment: {{car.newComment}}
   </p>
   <hr>
   <div ng-repeat="comment in comments">

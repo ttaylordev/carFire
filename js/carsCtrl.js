@@ -5,5 +5,4 @@ angular.module('carApp')
     $scope.createNewCar = function(newCar) {
       carsSvc.addCar(newCar);
     };
-
   });

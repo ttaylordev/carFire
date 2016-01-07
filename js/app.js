@@ -6,8 +6,8 @@ angular.module('carApp', ['ui.router', 'firebase'])
         templateUrl: '/js/views/cars.html',
         controller: 'carsCtrl'
       })
-      .state('car', {
-        url: '/cars/:carID',
+      .state('Car', {
+        url: '/cars/:carId',
         templateUrl: 'js/views/car.html',
         controller: 'carCtrl'
       });
